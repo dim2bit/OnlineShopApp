@@ -1,0 +1,37 @@
+﻿<div class="container main-section">
+    <div class="col-lg-12 pb-2">
+        <h2>Products</h2>
+        <h3><u>@Model.CurrentCategory</u></h3>
+    </div>
+    @{
+        if (Model.Products != null)
+        {
+            foreach (var product in Model.Products)
+            {
+                <div class="col-md-3">
+                    <div class="thumbnail" style="height: 350px; width: 100%;">
+                        <img src="@product.ImageUrl" alt="" style="height: 200px; width: 200px; object-fit: cover; " />
+                        <div class="caption" style="width: 200px; object-fit: cover; ">
+                            <h4 class="pull-right">
+                                @product.Price
+                                <span>₴</span>
+                            </h4>
+                            <h4>
+                                <a>@product.Name</a>
+                            </h4>
+                            <h6>@product.Description</h6>
+                            <a asp-controller="Cart"
+                               asp-action="AddToCart"
+                               asp-route-productId="@product.ProductId"
+                               class="btn btn-primary" role="button" style="position: absolute; bottom: 10%;">
+                               Add to cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    }
+</div>
+
+

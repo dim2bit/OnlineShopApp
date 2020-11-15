@@ -1,0 +1,7 @@
+﻿@model CartViewModel
+
+<li>
+    <a asp-controller="Cart" asp-action="Index">
+        <span class="glyphicon glyphicon-shopping-cart"></span>(@Model.Cart.GetTotalProductQuantity())
+    </a>
+</li>
