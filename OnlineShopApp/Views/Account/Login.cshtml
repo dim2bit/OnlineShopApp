@@ -1,0 +1,31 @@
+﻿@model LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<form asp-controller="Account" asp-action="Login" class="form-horizontal" method="POST" style="text-align: center;">
+    <fieldset>
+        <legend>Log in</legend>
+        <div class="control-group">
+            <label class="control-label">User name</label>
+            <div class="controls">
+                <input asp-for="UserName" type="text" placeholder="Name" class="input-xlarge">
+                <span asp-validation-for="UserName"></span>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">Password</label>
+            <div class="controls">
+                <input asp-for="Password" type="password" placeholder="Password" class="input-xlarge">
+                <span asp-validation-for="Password"></span>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <br />
+                <input type="submit" class="btn btn-primary" role="button" value="Log in" />
+            </div>
+        </div>
+    </fieldset>
+</form>

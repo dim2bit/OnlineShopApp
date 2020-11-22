@@ -8,11 +8,11 @@ namespace OnlineShopApp.ViewModels
 {
     public class LoginViewModel
     {
-        [Required]
+        [Required(ErrorMessage = "Name is not filled")]
         [Display(Name = "User name")]
         public string UserName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Password is not filled")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
 

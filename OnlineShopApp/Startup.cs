@@ -38,7 +38,14 @@ namespace OnlineShopApp
                 options.UseSqlServer(_configurationRoot.GetConnectionString("DefaultConnection")
                     .Replace("[DataDirectory]", path)));
 
-            services.AddIdentity<IdentityUser, IdentityRole>()
+            services.AddIdentity<IdentityUser, IdentityRole>(opts => {
+                    opts.Password.RequiredLength = 5;  
+                    opts.Password.RequireNonAlphanumeric = false; 
+                    opts.Password.RequireLowercase = false; 
+                    opts.Password.RequireUppercase = false; 
+                    opts.Password.RequireDigit = false;
+                })
+                .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<AppDbContext>();
 
             services.AddTransient<IProductRepository, ProductRepository>();

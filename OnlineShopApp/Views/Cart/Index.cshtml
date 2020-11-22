@@ -1,5 +1,8 @@
 ﻿@model CartViewModel
 
+@{
+    ViewData["Title"] = "Cart";
+}
 
 <div class="container main-section">
     <div class="row">
@@ -35,10 +38,11 @@
                             <td>@item.Quantity</td>
                             <td>@item.GetTotalPrice()<span>₴</span></td>
                             <td class="actions" data-th="" style="width:10%;">
-                                <a asp-controller="Cart" 
-                                   asp-action="RemoveFromCart" 
-                                   asp-route-productId="@item.Product.ProductId" 
-                                   class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i>Delete
+                                <a asp-controller="Cart"
+                                   asp-action="RemoveFromCart"
+                                   asp-route-productId="@item.Product.ProductId"
+                                   class="btn btn-danger btn-sm">
+                                    <i class="fa fa-trash-o"></i>Delete
                                 </a>
                             </td>
                         </tr>
