@@ -53,7 +53,7 @@ using OnlineShopApp.ViewModels;
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(27, 584, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3bdb27649c4249d1a0f09f5df3f6495d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea6e3dd758244329875487113b65f38", async() => {
                 BeginContext(33, 547, true);
                 WriteLiteral(@"
     <meta name=""viewport"" content=""width=device-width"" />
@@ -94,7 +94,7 @@ using OnlineShopApp.ViewModels;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(613, 1057, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "22b1c2e0b8f74993b885aba6b6c09d51", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6042af90c419437fbe08a78783a3cc4b", async() => {
                 BeginContext(619, 429, true);
                 WriteLiteral(@"
     <nav class=""navbar navbar-default"" style=""background-color: #e3f2fd;"">
@@ -109,7 +109,7 @@ using OnlineShopApp.ViewModels;
                         ");
                 EndContext();
                 BeginContext(1048, 199, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fd83d933f785411591be06c6e742fcf7", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e6c6eb52864c4eac9f53794575516e02", async() => {
                     BeginContext(1183, 60, true);
                     WriteLiteral("\r\n                            Home\r\n                        ");
                     EndContext();

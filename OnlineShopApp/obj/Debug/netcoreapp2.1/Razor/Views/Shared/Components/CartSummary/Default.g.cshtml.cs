@@ -50,7 +50,7 @@ using OnlineShopApp.ViewModels;
             WriteLiteral("\r\n<li>\r\n    ");
             EndContext();
             BeginContext(34, 158, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "51bb5d3516564c5da3b2826b47d09089", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "27b1732d641441d88a66bde308fbeb24", async() => {
                 BeginContext(78, 66, true);
                 WriteLiteral("\r\n        <span class=\"glyphicon glyphicon-shopping-cart\"></span>(");
                 EndContext();

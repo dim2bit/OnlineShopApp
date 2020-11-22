@@ -143,7 +143,7 @@ WriteAttributeValue("", 996, item.Product.ImageUrl, 996, 22, false);
             WriteLiteral("<span>₴</span></td>\r\n                            <td class=\"actions\" data-th=\"\" style=\"width:10%;\">\r\n                                ");
             EndContext();
             BeginContext(1675, 348, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6d801ed57faa433b85a3bd8324ca3290", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8d87d40227424f09a6c0d2a91f16bba5", async() => {
                 BeginContext(1912, 107, true);
                 WriteLiteral("\r\n                                    <i class=\"fa fa-trash-o\"></i>Delete\r\n                                ");
                 EndContext();
@@ -189,7 +189,7 @@ WriteAttributeValue("", 996, item.Product.ImageUrl, 996, 22, false);
             WriteLiteral("                </tbody>\r\n                <tfoot>\r\n                    <tr>\r\n                        <td>\r\n                            ");
             EndContext();
             BeginContext(2249, 333, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef7059e4ee284e2d8ef285718728b52c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "353b8a02ee394c3195eed6345cb6f0a0", async() => {
                 BeginContext(2464, 114, true);
                 WriteLiteral("\r\n                                <i class=\"fa fa-angle-left\"></i> Continue Shopping\r\n                            ");
                 EndContext();
@@ -231,7 +231,7 @@ WriteAttributeValue("", 996, item.Product.ImageUrl, 996, 22, false);
             WriteLiteral("<span>₴</span></strong></td>\r\n                        <td class=\"actions\" data-th=\"\" style=\"width:10%;\">\r\n                            ");
             EndContext();
             BeginContext(2933, 249, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6624b478f3ea47d5b0e9a47b3678725c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0e1d81b07e7e4ba085598c93607f984a", async() => {
                 BeginContext(3075, 103, true);
                 WriteLiteral("\r\n                                <i class=\"fa fa-trash-o\"></i>Clear cart\r\n                            ");
                 EndContext();

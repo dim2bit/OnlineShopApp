@@ -5,10 +5,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using OnlineShopApp.Models.Interfaces;
 using OnlineShopApp.Models;
-using OnlineShopApp.ViewModels; 
+using OnlineShopApp.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace OnlineShopApp.Controllers
 {
+    [Authorize]
     public class CartController : Controller
     {
         private readonly IProductRepository _productRepository;

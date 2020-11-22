@@ -16,6 +16,7 @@ namespace OnlineShopApp.ViewModels
         public string Password { get; set; }
 
         [Required(ErrorMessage = "Password is not filled")]
+        [Compare("Password", ErrorMessage = "Passwords don't match, try again")]
         [DataType(DataType.Password)]
         public string PasswordConfirmed { get; set; }
     }

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
 using OnlineShopApp.ViewModels;
-
+using Microsoft.AspNetCore.Authorization;
 
 namespace OnlineShopApp.Controllers
 {
@@ -20,12 +20,9 @@ namespace OnlineShopApp.Controllers
             _signInManager = signInManager;
         }
 
-        public IActionResult Login(string returnUrl)
+        public IActionResult Login()
         {
-            return View(new LoginViewModel()
-            {
-                ReturnUrl = returnUrl
-            });
+            return View();
         }
 
         [HttpPost]
@@ -60,7 +57,7 @@ namespace OnlineShopApp.Controllers
         {
             return View();
         }
-
+         
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(RegisterViewModel registerViewModel)
@@ -80,6 +77,7 @@ namespace OnlineShopApp.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()
         {
