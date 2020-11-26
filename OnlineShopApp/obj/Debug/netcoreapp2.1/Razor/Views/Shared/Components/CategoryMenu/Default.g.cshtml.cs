@@ -51,7 +51,7 @@ using OnlineShopApp.ViewModels;
             WriteLiteral("<li class=\"dropdown\">\r\n    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Categories<span class=\"caret\"></span></a>\r\n    <ul class=\"dropdown-menu\">\r\n        <li>\r\n            ");
             EndContext();
             BeginContext(244, 148, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "daea6fc0f323489ba7f712c37565fc43", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "529381f82f0b494fb0b7562ae7be332a", async() => {
                 BeginContext(360, 28, true);
                 WriteLiteral("All categories\r\n            ");
                 EndContext();
@@ -90,7 +90,7 @@ using OnlineShopApp.ViewModels;
             WriteLiteral("            <li>\r\n                ");
             EndContext();
             BeginContext(548, 161, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "11b81abb7bf84b439ade9215b64b9c58", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "80eb83488f8f4fb1a3bcb6a7191bd2c6", async() => {
                 BeginContext(674, 13, false);
 #line 16 "C:\dima\programming\C# .Net\OnlineShopApp\OnlineShopApp\Views\Shared\Components\CategoryMenu\Default.cshtml"
                                                    Write(category.Name);

@@ -16,10 +16,5 @@ namespace OnlineShopApp.Models
         public int Quantity { get; set; }
 
         public Product Product { get; set; }
-
-        public float GetTotalPrice()
-        {
-            return Product.Price * Quantity;
-        }
     }   
 }

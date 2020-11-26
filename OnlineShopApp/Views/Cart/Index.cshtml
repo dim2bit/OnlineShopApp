@@ -36,7 +36,7 @@
                             </td>
                             <td>@item.Product.Price<span>₴</span></td>
                             <td>@item.Quantity</td>
-                            <td>@item.GetTotalPrice()<span>₴</span></td>
+                            <td>@Model.CartRepository.GetItemPrice(item.ItemId)<span>₴</span></td>
                             <td class="actions" data-th="" style="width:10%;">
                                 <a asp-controller="Cart"
                                    asp-action="RemoveFromCart"

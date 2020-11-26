@@ -11,6 +11,8 @@ namespace OnlineShopApp.Models.Interfaces
 
         float GetTotalPrice();
 
+        float GetItemPrice(int itemId);
+
         int GetTotalProductQuantity();
 
         void AddToCart(Product product);

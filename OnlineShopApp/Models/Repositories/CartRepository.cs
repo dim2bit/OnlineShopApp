@@ -31,11 +31,19 @@ namespace OnlineShopApp.Models.Repositories
 
         public float GetTotalPrice()
         {
-            float totalPrice = _appDbContext.CartItems
-                                .Where(item => item.CartId == _cart.CartId)
-                                .Select(item => item.Product.Price * item.Quantity)
-                                .Sum();
-            return totalPrice;
+            return _appDbContext.CartItems
+                   .Where(item => item.CartId == _cart.CartId)
+                   .Select(item => item.Product.Price * item.Quantity)
+                   .Sum();
+        }
+
+        public float GetItemPrice(int itemId)
+        {
+            return _appDbContext.CartItems
+                   .Where(item => item.CartId == _cart.CartId)
+                   .Where(item => item.ItemId == itemId)
+                   .Select(item => item.Product.Price * item.Quantity)
+                   .Sum();
         }
 
         public int GetTotalProductQuantity()
