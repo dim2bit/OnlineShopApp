@@ -48,8 +48,15 @@ namespace OnlineShopApp
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<AppDbContext>();
 
+            services.AddDistributedRedisCache(options =>
+            {
+                options.Configuration = "localhost:6379";
+                options.InstanceName = "redis1";
+            });
+
             services.AddTransient<IProductRepository, ProductRepository>();
             services.AddTransient<ICategoryRepository, CategoryRepository>();
+            services.AddTransient<ICartRepository, CartRepository>();
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped(serviceProvider => Cart.GetCart(serviceProvider));
@@ -74,11 +81,10 @@ namespace OnlineShopApp
 
             app.UseMvc(routes =>
             {
-                routes.MapRoute(name: "cart", template: "{Cart}/{Index}/{id?}");
                 routes.MapRoute(name: "default", template: "{controller=Home}/{action=Index}/{category=AllCategories}");
             });
 
-            DbInitializer.Initialize(serviceProvider.GetRequiredService<AppDbContext>());
+            //DbInitializer.Initialize(serviceProvider.GetRequiredService<AppDbContext>());
         }
     }
 }

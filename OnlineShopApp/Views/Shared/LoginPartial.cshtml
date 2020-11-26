@@ -13,6 +13,9 @@
     <ul class="nav navbar-nav navbar-right">
         <li><a>Hello, @User.Identity.Name!</a></li>
     </ul>
+    <ul class="nav navbar-nav navbar-right">
+        @await Component.InvokeAsync("CartSummary")
+    </ul>
 }
 else
 {

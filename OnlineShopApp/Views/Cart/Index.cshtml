@@ -59,7 +59,7 @@
                             </a>
                         </td>
                         <td colspan="2" class="hidden-xs"></td>
-                        <td class="hidden-xs text-center" style="width:10%;"><strong>Total: @Model.Cart.GetTotalPrice()<span>₴</span></strong></td>
+                        <td class="hidden-xs text-center" style="width:10%;"><strong>Total: @Model.CartRepository.GetTotalPrice()<span>₴</span></strong></td>
                         <td class="actions" data-th="" style="width:10%;">
                             <a asp-controller="Cart"
                                asp-action="ClearCart"

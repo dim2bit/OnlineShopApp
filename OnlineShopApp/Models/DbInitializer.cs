@@ -22,6 +22,7 @@ namespace OnlineShopApp.Models
                     var categoryList = new Category[]
                     {
                         new Category { Name = "Laptops", Description = "Laptop computers" },
+                        new Category { Name = "TV's", Description = "TV devices" },
                         new Category { Name = "Smartphones", Description = "Smartphone devices" }
                     };
 
@@ -100,6 +101,36 @@ namespace OnlineShopApp.Models
                         IsInWishlist = true,
                         IsInStock = true,
                         Category = Categories["Laptops"]
+                    },
+                    new Product
+                    {
+                        Name = "Asus Zephyrus S",
+                        Description = "Gaming laptop with RTX 2080",
+                        Price = 65000,
+                        ImageUrl = "https://static.bhphoto.com/images/images2500x2500/1573137815_1513936.jpg",
+                        IsInWishlist = true,
+                        IsInStock = true,
+                        Category = Categories["Laptops"]
+                    },
+                    new Product
+                    {
+                        Name = "Toshiba 49'",
+                        Description = "4k UHD Smart TV",
+                        Price = 13000,
+                        ImageUrl = "https://i2.rozetka.ua/goods/17827075/193741276_images_17827075705.jpg",
+                        IsInWishlist = true,
+                        IsInStock = true,
+                        Category = Categories["TV's"]
+                    },
+                    new Product
+                    {
+                        Name = "Sony KDL50",
+                        Description = "Sony 4k UHD Smart TV",
+                        Price = 20000,
+                        ImageUrl = "https://img.mvideo.ru/Pdb/10008150b.jpg",
+                        IsInWishlist = true,
+                        IsInStock = true,
+                        Category = Categories["TV's"]
                     }
                 );
             

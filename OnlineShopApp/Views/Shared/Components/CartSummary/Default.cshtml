@@ -2,6 +2,6 @@
 
 <li>
     <a asp-controller="Cart" asp-action="Index">
-        <span class="glyphicon glyphicon-shopping-cart"></span>(@Model.Cart.GetTotalProductQuantity())
+        <span class="glyphicon glyphicon-shopping-cart"></span>(@Model.CartRepository.GetTotalProductQuantity())
     </a>
 </li>
